@@ -1,0 +1,5 @@
+{
+  "require": {
+    "phpdrone/drone-plugin-sdk": "0.1.0"
+  }
+}

@@ -1,0 +1,18 @@
+pipeline:
+  test:
+    image: plugin
+    secrets: [ my_secret, other_secret ]
+    my_parameter:
+      something: yes
+      something_else: probably
+      another_level:
+        - item1
+        - item2
+      a_boolean: true
+      also_a_bool: yes
+    my_array: [ an, array ]
+    another_array:
+      - machin
+      - bidule
+      - truc
+
