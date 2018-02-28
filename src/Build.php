@@ -7,7 +7,7 @@ namespace DronePluginSdk {
          * @param bool $parseArray
          * @return array|bool|string|\stdClass
          */
-        private function getPluginParameter($env, $parseArray=true) {
+        public function getPluginParameter($env, $parseArray=true) {
             $env = strtoupper("plugin_".$env);
             $value = getenv($env);
             if(!empty($value)) {
