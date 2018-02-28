@@ -7,8 +7,8 @@ namespace DronePluginSdk {
          * @param bool $parseArray
          * @return array|bool|string|\stdClass
          */
-        private function getEnv($env, $parseArray=true) {
-            $env = strtoupper($env);
+        private function getPluginParameter($env, $parseArray=true) {
+            $env = strtoupper("plugin_".$env);
             $value = getenv($env);
             if(!empty($value)) {
                 if($this->isJson($value)) {
@@ -20,15 +20,6 @@ namespace DronePluginSdk {
                 }
             }
             return $value;
-        }
-
-
-        /**
-         * @param $parameterName
-         * @return array|bool|\stdClass|string
-         */
-        public function getPluginParameter($parameterName) {
-            return $this->getEnv('plugin_'.$parameterName);
         }
 
         /**
@@ -43,7 +34,7 @@ namespace DronePluginSdk {
          * @return Commit
          */
         public function getCommit() {
-            return new Commit($this);
+            return new Commit();
         }
 
         /**
