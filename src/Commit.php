@@ -1,5 +1,10 @@
 <?php
 namespace DronePluginSdk {
+    /**
+     * Class Commit
+     * Should be complted with http://docs.drone.io/environment-reference/
+     * @package DronePluginSdk
+     */
     class Commit {
 
         /**

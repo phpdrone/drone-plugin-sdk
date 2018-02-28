@@ -1,5 +1,9 @@
 <?php
 namespace DronePluginSdk {
+    /**
+     * Class Build
+     * @package DronePluginSdk
+     */
     class Build {
 
         /**
