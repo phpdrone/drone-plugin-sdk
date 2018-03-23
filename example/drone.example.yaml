@@ -1,0 +1,24 @@
+pipeline:
+  build:
+    image: docker
+    commands:
+      - docker build . -t phpdrone-example
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  test:
+    image: phpdrone-example  
+    secrets: [ my_secret, other_secret ]
+    my_parameter:
+      something: yes
+      something_else: probably
+      another_level:
+        - item1
+        - item2
+      a_boolean: true
+      also_a_bool: yes
+    my_array: [ an, array ]
+    another_array:
+      - machin
+      - bidule
+      - truc

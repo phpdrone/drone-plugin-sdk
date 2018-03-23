@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <rule ref="PSR2"/>
+    <description>DronePluginSDK</description>
+    <file>src</file>
+    <exclude-pattern>vendor</exclude-pattern>
+</ruleset>

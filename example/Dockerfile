@@ -1,4 +1,4 @@
-FROM fpfis/php71
+FROM phpdrone/composer:php72-latest 
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 

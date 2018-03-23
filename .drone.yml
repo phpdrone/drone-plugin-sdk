@@ -1,0 +1,11 @@
+pipeline:
+  prepare:
+    image: phpdrone/composer:php72-latest
+    commands:
+      - composer install --ansi
+
+  phpcs:
+    image: php:7.2-alpine
+    commands:
+      - ./vendor/bin/phpcs
+
