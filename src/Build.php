@@ -3,6 +3,7 @@ namespace DronePluginSdk {
 
     /**
      * Class Build
+     * TODO: Should be completed with http://docs.drone.io/environment-reference/
      * @package DronePluginSdk
      */
     class Build

@@ -3,7 +3,7 @@ namespace DronePluginSdk {
 
     /**
      * Class Commit
-     * Should be complted with http://docs.drone.io/environment-reference/
+     * TODO: Should be completed with http://docs.drone.io/environment-reference/
      * @package DronePluginSdk
      */
     class Repo
