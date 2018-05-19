@@ -5,7 +5,21 @@ pipeline:
       - composer install --ansi
 
   phpcs:
-    image: php:7.2-alpine
+    image: phpdrone/composer:php72-latest
     commands:
       - ./vendor/bin/phpcs
 
+  phpdoc:
+    image: phpdrone/phpdoc
+
+  deploy-docs:
+    image: fpfis/drone-plugin-git-deploy
+    source: doc
+    target_repo: git@github.com:phpdrone/drone-plugin-sdk.git
+    target_folder: gh-pages
+    clean: true
+    secrets: [ deploy_key ]
+    message: "Published ${DRONE_COMMIT_SHA} [CI SKIP]"
+    target_branch: gh-pages
+    excludes:
+      - CNAME
