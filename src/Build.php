@@ -7,7 +7,7 @@ namespace DronePluginSdk {
      * This class represents a running Drone build and facilitates access to various
      * exposed environment variables and plugin settings.
      *
-     * The following reference YAML will be used a reference for the following examples.
+     * The following reference YAML will be used a reference for the following examples :
      *
      * ### drone.example.yml
      *
@@ -42,7 +42,7 @@ namespace DronePluginSdk {
          *
          * *The plugin can return an object if the key is complex ( eg: nested )*
          *
-         * ## Getting a simple :
+         * ## Getting a simple value :
          *
          * ```php
          * // Get the build :
