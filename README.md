@@ -6,6 +6,10 @@ This library faciliates the use of PHP to write drone plugins.
 
 An example plugin can be found and looked at in the [example](example) directory.
 
+## Documenation
+
+See the [generated API documenation](https://phpdrone.github.io/drone-plugin-sdk/).
+
 ### Publishing
 
 You need a docker hub account to publish your image.
