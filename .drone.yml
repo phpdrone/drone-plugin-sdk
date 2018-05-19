@@ -5,11 +5,13 @@ pipeline:
       - composer install --ansi
 
   phpcs:
+    group: test
     image: phpdrone/composer:php72-latest
     commands:
       - ./vendor/bin/phpcs
 
   phpdoc:
+    group: test
     image: phpdrone/phpdoc
 
   deploy-docs:

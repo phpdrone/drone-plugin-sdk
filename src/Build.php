@@ -16,6 +16,7 @@ namespace DronePluginSdk {
      *   test:
      *     image: phpdrone-example
      *     secrets: [ my_secret, other_secret ]
+     *     my_simple_parameter: World
      *     my_parameter:
      *       something: yes
      *       something_else: probably
@@ -36,11 +37,26 @@ namespace DronePluginSdk {
      */
     class Build
     {
-
         /**
          * Gets a plugin parameter from Drone
          *
-         * The plugin can return an object if the key is complex ( eg: nested ).
+         * *The plugin can return an object if the key is complex ( eg: nested )*
+         *
+         * ## Getting a simple :
+         *
+         * ```php
+         * // Get the build :
+         * $build = new \DronePluginSdk\Build();
+         *
+         * // Get some settings :
+         * var_dump($build->getPluginParameter('my_simple_parameter'));
+         * ```
+         *
+         * ### Result
+         *
+         * ```sh
+         * [test:L0:0s] string(8) "World"
+         * ```
          *
          * ## Getting a complex value :
          *
