@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpdoc>
-    <transformations>
-        <template name="abstract"/>
-    </transformations>
     <title>Drone Plugin PHP SDK documentation</title>
     <parser>
         <target>doc</target>
