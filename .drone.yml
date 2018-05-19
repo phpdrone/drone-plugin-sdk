@@ -12,7 +12,7 @@ pipeline:
 
   phpdoc:
     group: test
-    image: phpdrone/phpdoc
+    image: phpdrone/phpdoc:2
 
   deploy-docs:
     image: fpfis/drone-plugin-git-deploy
